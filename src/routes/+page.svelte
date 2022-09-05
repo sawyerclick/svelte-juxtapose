@@ -6,7 +6,7 @@
 
 	const site = {
 		title: 'svelte-juxtapose',
-		description: 'Easily juxtapose two blocks with a interactive slider.',
+		description: 'Easily juxtapose two blocks with an interactive slider.',
 		keywords: ['svelte,image compare,juxtapose,photography,web development']
 	};
 </script>
@@ -57,6 +57,37 @@
 			By <a href="https://github.com/SawyerClick" target="_blank" itemprop="author">Sawyer Click</a>
 		</p>
 	</header>
+
+	<section id="examples">
+		<header>
+			<h2>Examples</h2>
+		</header>
+		<section id="simple">
+			<header>
+				<h3>Simple</h3>
+			</header>
+			<figure bind:clientWidth={figureWidth}>
+				<Juxtapose height={figureWidth / 2} width={figureWidth} --thumb-color="var(--accent)">
+					<img
+						slot="before"
+						src="https://via.placeholder.com/600x300.png/d7d7d7/323232?text=Before"
+						alt="Before"
+					/>
+
+					<img
+						slot="after"
+						src="https://via.placeholder.com/600x300.png/323232/ffffff?text=After"
+						alt="After"
+					/>
+				</Juxtapose>
+				<figcaption>
+					A simple example of svelte-juxtapose featuring two image tags in the <a href="#slots"
+						><b>before</b> and <b>after</b> slots</a
+					>.
+				</figcaption>
+			</figure>
+		</section>
+	</section>
 
 	<section id="usage">
 		<header>
@@ -159,32 +190,6 @@
 				</tbody>
 			</table>
 		</section>
-	</section>
-
-	<section id="simple">
-		<header>
-			<h2>Simple example</h2>
-		</header>
-		<figure bind:clientWidth={figureWidth}>
-			<Juxtapose height={figureWidth / 2} width={figureWidth} --thumb-color="var(--accent)">
-				<img
-					slot="before"
-					src="https://via.placeholder.com/600x300.png/d7d7d7/323232?text=Before"
-					alt="Before"
-				/>
-
-				<img
-					slot="after"
-					src="https://via.placeholder.com/600x300.png/323232/ffffff?text=After"
-					alt="After"
-				/>
-			</Juxtapose>
-			<figcaption>
-				A simple example of svelte-juxtapose featuring two image tags in the <a href="#slots"
-					><b>before</b> and <b>after</b> slots</a
-				>.
-			</figcaption>
-		</figure>
 	</section>
 </main>
 
