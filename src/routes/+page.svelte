@@ -1,5 +1,5 @@
 <script>
-	import Juxtapose from '$lib/Juxtapose.svelte';
+	import Juxtapose from '$lib/index.js';
 
 	/** @type {Number} */
 	let figureWidth = 300;
