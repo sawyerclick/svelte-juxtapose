@@ -1,6 +1,6 @@
 {
 	"name": "svelte-juxtapose",
-	"version": "0.0.1",
+	"version": "1.0.1",
 	"description": "A Svelte component for easily juxtaposing images with an interactive slider",
 	"author": {
 		"name": "Sawyer Click",
