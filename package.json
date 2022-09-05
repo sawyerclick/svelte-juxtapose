@@ -32,7 +32,7 @@
 		"format": "prettier --write .",
 		"prepublishOnly": "npm run release && exit 1",
 		"postversion": "git push && git push --tags && npm run release",
-		"release": "npm run build:package && npm publish ./package"
+		"release": "npm run package && npm publish ./package"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-netlify": "^1.0.0-next.76",
