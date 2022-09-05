@@ -15,8 +15,11 @@
 	/** @type {String|undefined} */
 	export let style = undefined;
 
+	/** @type {Number} */
+	export let starting = 50;
+
 	// /** @type {import('svelte/motion').spring} */
-	const position = spring(50);
+	const position = spring(starting);
 
 	// /** @type {import('svelte').ComponentEvents} */
 	const dispatch = createEventDispatcher();
