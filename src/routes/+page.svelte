@@ -52,7 +52,13 @@
 
 	<header>
 		<h1 itemprop="name">svelte-juxtapose</h1>
-		<p itemprop="description">Easily juxtapose two blocks with a interactive slider.</p>
+		<p itemprop="description">
+			Easily juxtapose two blocks with a interactive slider. Currently only works with a horizontal
+			slider. Want a vertical version? <a
+				href="https://github.com/sawyerclick/svelte-juxtapose/issues"
+				target="_blank">Let me know.</a
+			>
+		</p>
 		<p>
 			By <a href="https://github.com/SawyerClick" target="_blank" itemprop="author">Sawyer Click</a>
 		</p>
@@ -126,6 +132,14 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td>starting</td>
+						<td>50</td>
+						<td>
+							The percentage at which the slider should start. Should be given as a number equal to
+							or greater than zero and equal to or less than zero.
+						</td>
+					</tr>
+					<tr>
 						<td>width</td>
 						<td>600px</td>
 						<td>
@@ -151,6 +165,16 @@
 						<td>style</td>
 						<td><code>undefined</code></td>
 						<td>Styles to apply to the container element.</td>
+					</tr>
+					<tr>
+						<td>--thumb-size</td>
+						<td>calc(var(--height) / 10)</td>
+						<td> The size of the thumb. </td>
+					</tr>
+					<tr>
+						<td>--thumb-color</td>
+						<td>#000000</td>
+						<td> The color of the thumb. </td>
 					</tr>
 				</tbody>
 			</table>
